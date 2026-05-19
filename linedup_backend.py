@@ -16,7 +16,7 @@ or any static file host. The iOS app fetches this URL.
 import requests
 import json
 import time
-from datetime import datetime, timezone
+import os
 
 # ============================================================
 # CONFIGURATION
