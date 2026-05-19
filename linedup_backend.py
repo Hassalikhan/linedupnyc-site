@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 # CONFIGURATION
 # ============================================================
 
-API_KEY = "AIzaSyBCAJSb8jwc6cAYscYDB4Ak6dd2ZZqnVhM"  # Replace with your actual key
+API_KEY = os.environ.get("GOOGLE_PLACES_API_KEY", "")
 
 # All 10 LinedUp venues with their Google Place IDs
 VENUES = [
