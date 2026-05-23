@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-23T09:16:36.697389+00:00",
-  "updated_at_local": "05:16 AM",
+  "updated_at": "2026-05-23T10:44:35.549468+00:00",
+  "updated_at_local": "06:44 AM",
   "day_of_week": "Saturday",
   "venue_count": 10,
   "venues": [
@@ -155,7 +155,7 @@
       "color": "#E8B828",
       "ig": "https://www.instagram.com/explore/locations/25606741/katzs-delicatessen/",
       "is_open": true,
-      "busyness": 34,
+      "busyness": 22,
       "estimated_wait": 12,
       "min_wait": 9,
       "max_wait": 15,
