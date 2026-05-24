@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-24T21:35:50.810802+00:00",
-  "updated_at_local": "05:35 PM",
+  "updated_at": "2026-05-24T22:35:55.914598+00:00",
+  "updated_at_local": "06:35 PM",
   "day_of_week": "Sunday",
   "venue_count": 10,
   "venues": [
@@ -62,7 +62,7 @@
       "status": "PREPARE TO WAIT, IT'S A HOT LINE",
       "status_color": "#F87171",
       "google_rating": 4.4,
-      "google_rating_count": 254
+      "google_rating_count": 255
     },
     {
       "id": 4,
@@ -122,7 +122,7 @@
       "status": "IT'S MOVING, BUT MAY BE A MINUTE",
       "status_color": "#FB923C",
       "google_rating": 4.4,
-      "google_rating_count": 9044
+      "google_rating_count": 9045
     },
     {
       "id": 7,
