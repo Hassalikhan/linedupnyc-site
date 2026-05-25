@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-25T01:35:55.220584+00:00",
-  "updated_at_local": "09:35 PM",
-  "day_of_week": "Sunday",
+  "updated_at": "2026-05-25T06:06:11.738869+00:00",
+  "updated_at_local": "02:06 AM",
+  "day_of_week": "Monday",
   "venue_count": 10,
   "venues": [
     {
@@ -14,15 +14,15 @@
       "tagline": "Aussie froyo, NYC line. The math doesn't math.",
       "color": "#E8A87C",
       "ig": "https://www.instagram.com/explore/locations/120499254434498/mimis-nyc/",
-      "is_open": true,
-      "busyness": 67,
-      "estimated_wait": 21,
-      "min_wait": 16,
-      "max_wait": 26,
-      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
-      "status_color": "#FB923C",
+      "is_open": false,
+      "busyness": 0,
+      "estimated_wait": 0,
+      "min_wait": 0,
+      "max_wait": 0,
+      "status": "CLOSED",
+      "status_color": "#6B7280",
       "google_rating": 4.4,
-      "google_rating_count": 249
+      "google_rating_count": 253
     },
     {
       "id": 2,
@@ -42,7 +42,7 @@
       "status": "CLOSED",
       "status_color": "#6B7280",
       "google_rating": 4.5,
-      "google_rating_count": 523
+      "google_rating_count": 524
     },
     {
       "id": 3,
@@ -54,13 +54,13 @@
       "tagline": "Baklava crumble on Greek froyo. Hour-long line on Greek froyo.",
       "color": "#1E3A5F",
       "ig": "https://www.instagram.com/explore/tags/mykagreek/",
-      "is_open": true,
-      "busyness": 61,
-      "estimated_wait": 31,
-      "min_wait": 24,
-      "max_wait": 38,
-      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
-      "status_color": "#FB923C",
+      "is_open": false,
+      "busyness": 0,
+      "estimated_wait": 0,
+      "min_wait": 0,
+      "max_wait": 0,
+      "status": "CLOSED",
+      "status_color": "#6B7280",
       "google_rating": 4.4,
       "google_rating_count": 256
     },
@@ -74,13 +74,13 @@
       "tagline": "Named after a Brussels Griffon. Lines longer than the leash.",
       "color": "#F4C2C2",
       "ig": "https://www.instagram.com/explore/locations/18444227862089498/birdies-nyc/",
-      "is_open": true,
-      "busyness": 90,
-      "estimated_wait": 25,
-      "min_wait": 19,
-      "max_wait": 31,
-      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
-      "status_color": "#FB923C",
+      "is_open": false,
+      "busyness": 0,
+      "estimated_wait": 0,
+      "min_wait": 0,
+      "max_wait": 0,
+      "status": "CLOSED",
+      "status_color": "#6B7280",
       "google_rating": 4.3,
       "google_rating_count": 130
     },
@@ -94,13 +94,13 @@
       "tagline": "Parsi Cubano worth the Christopher St commute.",
       "color": "#E07B39",
       "ig": "https://www.instagram.com/fontysdeli_dukaan/",
-      "is_open": true,
-      "busyness": 22,
-      "estimated_wait": 5,
-      "min_wait": 4,
-      "max_wait": 6,
-      "status": "WALK RIGHT IN",
-      "status_color": "#4ADE80",
+      "is_open": false,
+      "busyness": 0,
+      "estimated_wait": 0,
+      "min_wait": 0,
+      "max_wait": 0,
+      "status": "CLOSED",
+      "status_color": "#6B7280",
       "google_rating": 4.1,
       "google_rating_count": 207
     },
@@ -115,14 +115,14 @@
       "color": "#D4442A",
       "ig": "https://www.instagram.com/explore/locations/285093/prince-street-pizza/",
       "is_open": true,
-      "busyness": 100,
-      "estimated_wait": 35,
-      "min_wait": 27,
-      "max_wait": 43,
-      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
-      "status_color": "#FB923C",
+      "busyness": 23,
+      "estimated_wait": 10,
+      "min_wait": 8,
+      "max_wait": 12,
+      "status": "NOT BAD AT ALL",
+      "status_color": "#FACC15",
       "google_rating": 4.4,
-      "google_rating_count": 9045
+      "google_rating_count": 9044
     },
     {
       "id": 7,
@@ -142,7 +142,7 @@
       "status": "CLOSED",
       "status_color": "#6B7280",
       "google_rating": 4.5,
-      "google_rating_count": 1427
+      "google_rating_count": 1426
     },
     {
       "id": 8,
@@ -154,15 +154,15 @@
       "tagline": "I'll have what she's having. In 40 minutes.",
       "color": "#E8B828",
       "ig": "https://www.instagram.com/explore/locations/25606741/katzs-delicatessen/",
-      "is_open": true,
-      "busyness": 33,
-      "estimated_wait": 12,
-      "min_wait": 9,
-      "max_wait": 15,
-      "status": "NOT BAD AT ALL",
-      "status_color": "#FACC15",
+      "is_open": false,
+      "busyness": 0,
+      "estimated_wait": 0,
+      "min_wait": 0,
+      "max_wait": 0,
+      "status": "CLOSED",
+      "status_color": "#6B7280",
       "google_rating": 4.5,
-      "google_rating_count": 52935
+      "google_rating_count": 52941
     },
     {
       "id": 9,
@@ -174,13 +174,13 @@
       "tagline": "Training for an Ironman birthed this cookie. And this line.",
       "color": "#D4763A",
       "ig": "https://www.instagram.com/explore/locations/270413816/levain-bakery/",
-      "is_open": true,
-      "busyness": 30,
-      "estimated_wait": 8,
-      "min_wait": 6,
-      "max_wait": 10,
-      "status": "WALK RIGHT IN",
-      "status_color": "#4ADE80",
+      "is_open": false,
+      "busyness": 0,
+      "estimated_wait": 0,
+      "min_wait": 0,
+      "max_wait": 0,
+      "status": "CLOSED",
+      "status_color": "#6B7280",
       "google_rating": 4.7,
       "google_rating_count": 3679
     },
@@ -202,7 +202,7 @@
       "status": "CLOSED",
       "status_color": "#6B7280",
       "google_rating": 4.1,
-      "google_rating_count": 986
+      "google_rating_count": 987
     }
   ]
 }
