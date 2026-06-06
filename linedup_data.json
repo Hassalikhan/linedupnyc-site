@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-06T04:18:19.687274+00:00",
-  "updated_at_local": "12:18 AM",
+  "updated_at": "2026-06-06T07:28:09.405773+00:00",
+  "updated_at_local": "03:28 AM",
   "day_of_week": "Saturday",
   "venue_count": 15,
   "venues": [
@@ -145,14 +145,14 @@
       "color": "#D4442A",
       "ig": "https://www.instagram.com/explore/locations/285093/prince-street-pizza/",
       "is_open": true,
-      "busyness": 22,
+      "busyness": 32,
       "estimated_wait": 10,
       "min_wait": 8,
       "max_wait": 12,
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
       "google_rating": 4.4,
-      "google_rating_count": 9067
+      "google_rating_count": 9068
     },
     {
       "id": 7,
@@ -195,14 +195,14 @@
       "color": "#E8B828",
       "ig": "https://www.instagram.com/explore/locations/25606741/katzs-delicatessen/",
       "is_open": true,
-      "busyness": 36,
+      "busyness": 26,
       "estimated_wait": 12,
       "min_wait": 9,
       "max_wait": 15,
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
       "google_rating": 4.5,
-      "google_rating_count": 53235
+      "google_rating_count": 53237
     },
     {
       "id": 9,
