@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-18T06:25:51.830936+00:00",
-  "updated_at_local": "02:25 AM",
+  "updated_at": "2026-06-18T10:54:51.336896+00:00",
+  "updated_at_local": "06:54 AM",
   "day_of_week": "Thursday",
   "venue_count": 15,
   "venues": [
@@ -202,7 +202,7 @@
       "status": "CLOSED",
       "status_color": "#6B7280",
       "google_rating": 4.5,
-      "google_rating_count": 53468
+      "google_rating_count": 53469
     },
     {
       "id": 9,
