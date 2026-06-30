@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-30T22:23:07.741189+00:00",
-  "updated_at_local": "06:23 PM",
+  "updated_at": "2026-06-30T23:43:18.230552+00:00",
+  "updated_at_local": "07:43 PM",
   "day_of_week": "Tuesday",
   "venue_count": 25,
   "venues": [
@@ -20,12 +20,12 @@
       "color": "#E8A87C",
       "ig": "https://www.instagram.com/explore/locations/120499254434498/mimis-nyc/",
       "is_open": true,
-      "busyness": 40,
-      "estimated_wait": 19,
-      "min_wait": 15,
-      "max_wait": 23,
-      "status": "NOT BAD AT ALL",
-      "status_color": "#FACC15",
+      "busyness": 15,
+      "estimated_wait": 4,
+      "min_wait": 3,
+      "max_wait": 5,
+      "status": "WALK RIGHT IN",
+      "status_color": "#4ADE80",
       "google_rating": 4.4,
       "google_rating_count": 293
     },
@@ -77,7 +77,7 @@
       "status": "IT'S MOVING, BUT MAY BE A MINUTE",
       "status_color": "#FB923C",
       "google_rating": 4.4,
-      "google_rating_count": 333
+      "google_rating_count": 334
     },
     {
       "id": 4,
@@ -102,7 +102,7 @@
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
       "google_rating": 4.3,
-      "google_rating_count": 153
+      "google_rating_count": 154
     },
     {
       "id": 5,
@@ -202,7 +202,7 @@
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
       "google_rating": 4.5,
-      "google_rating_count": 53705
+      "google_rating_count": 53707
     },
     {
       "id": 9,
@@ -252,7 +252,7 @@
       "status": "CLOSED",
       "status_color": "#6B7280",
       "google_rating": 4.1,
-      "google_rating_count": 1048
+      "google_rating_count": 1049
     },
     {
       "id": 11,
@@ -277,7 +277,7 @@
       "status": "IT'S MOVING, BUT MAY BE A MINUTE",
       "status_color": "#FB923C",
       "google_rating": 4.8,
-      "google_rating_count": 291
+      "google_rating_count": 292
     },
     {
       "id": 12,
@@ -295,14 +295,14 @@
       "color": "#E8A87C",
       "ig": "https://www.instagram.com/mimis.ny/",
       "is_open": true,
-      "busyness": 47,
-      "estimated_wait": 15,
-      "min_wait": 12,
-      "max_wait": 18,
-      "status": "NOT BAD AT ALL",
-      "status_color": "#FACC15",
+      "busyness": 22,
+      "estimated_wait": 6,
+      "min_wait": 5,
+      "max_wait": 7,
+      "status": "WALK RIGHT IN",
+      "status_color": "#4ADE80",
       "google_rating": 4.7,
-      "google_rating_count": 184
+      "google_rating_count": 185
     },
     {
       "id": 13,
