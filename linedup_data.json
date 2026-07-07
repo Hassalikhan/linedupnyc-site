@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-07T21:51:23.764508+00:00",
-  "updated_at_local": "05:51 PM",
+  "updated_at": "2026-07-07T22:51:48.460112+00:00",
+  "updated_at_local": "06:51 PM",
   "day_of_week": "Tuesday",
   "venue_count": 25,
   "venues": [
@@ -20,12 +20,12 @@
       "color": "#E8A87C",
       "ig": "https://www.instagram.com/explore/locations/120499254434498/mimis-nyc/",
       "is_open": true,
-      "busyness": 73,
-      "estimated_wait": 21,
-      "min_wait": 16,
-      "max_wait": 26,
-      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
-      "status_color": "#FB923C",
+      "busyness": 48,
+      "estimated_wait": 19,
+      "min_wait": 15,
+      "max_wait": 23,
+      "status": "NOT BAD AT ALL",
+      "status_color": "#FACC15",
       "google_rating": 4.3,
       "google_rating_count": 299
     },
@@ -51,8 +51,8 @@
       "max_wait": 0,
       "status": "CLOSED",
       "status_color": "#6B7280",
-      "google_rating": 4.5,
-      "google_rating_count": 616
+      "google_rating": null,
+      "google_rating_count": null
     },
     {
       "id": 3,
@@ -202,7 +202,7 @@
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
       "google_rating": 4.5,
-      "google_rating_count": 53831
+      "google_rating_count": 53832
     },
     {
       "id": 9,
@@ -295,12 +295,12 @@
       "color": "#E8A87C",
       "ig": "https://www.instagram.com/mimis.ny/",
       "is_open": true,
-      "busyness": 80,
-      "estimated_wait": 25,
-      "min_wait": 19,
-      "max_wait": 31,
-      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
-      "status_color": "#FB923C",
+      "busyness": 55,
+      "estimated_wait": 15,
+      "min_wait": 12,
+      "max_wait": 18,
+      "status": "NOT BAD AT ALL",
+      "status_color": "#FACC15",
       "google_rating": 4.7,
       "google_rating_count": 192
     },
@@ -470,10 +470,10 @@
       "color": "#1C1C2E",
       "ig": "https://www.instagram.com/tomijazznewyork_official/",
       "is_open": true,
-      "busyness": 54,
-      "estimated_wait": 30,
-      "min_wait": 23,
-      "max_wait": 37,
+      "busyness": 79,
+      "estimated_wait": 31,
+      "min_wait": 24,
+      "max_wait": 38,
       "status": "IT'S MOVING, BUT MAY BE A MINUTE",
       "status_color": "#FB923C",
       "google_rating": null,
