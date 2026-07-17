@@ -22,7 +22,7 @@ VENUES = [
         "peak_start": 12, "peak_end": 17,
         "avg_wait_peak": 30, "avg_wait_off": 8,
         "color": "#E8A87C",
-        "ig": "https://www.instagram.com/explore/locations/120499254434498/mimis-nyc/",
+        "ig": "https://instagram.com/mimis.ny",
     },
     {
         "id": 2, "name": "Caffè Paradiso", "subtitle": "The Salted Brown Butter Cult",
@@ -33,7 +33,7 @@ VENUES = [
         "peak_start": 9, "peak_end": 14,
         "avg_wait_peak": 25, "avg_wait_off": 8,
         "color": "#6B8F71",
-        "ig": "https://www.instagram.com/explore/locations/1029821498160269/caffe-paradiso/",
+        "ig": "https://instagram.com/caffeparadiso.nyc",
     },
     {
         "id": 3, "name": "MYKA Greek", "subtitle": "Madrid → Miami → The Village",
@@ -44,7 +44,7 @@ VENUES = [
         "peak_start": 13, "peak_end": 20,
         "avg_wait_peak": 45, "avg_wait_off": 15,
         "color": "#1E3A5F",
-        "ig": "https://www.instagram.com/explore/tags/mykagreek/",
+       "ig": "https://instagram.com/myka_greek.usa",
     },
     {
         "id": 4, "name": "Birdie's", "subtitle": "Froyo Is Back",
@@ -55,7 +55,7 @@ VENUES = [
         "peak_start": 14, "peak_end": 21,
         "avg_wait_peak": 25, "avg_wait_off": 8,
         "color": "#F4C2C2",
-        "ig": "https://www.instagram.com/explore/locations/18444227862089498/birdies-nyc/",
+        "ig": "https://instagram.com/birdiesnyc",
     },
     {
         "id": 5, "name": "Fonty's Deli + Dukaan", "subtitle": "Indian Bodega Energy",
@@ -77,7 +77,7 @@ VENUES = [
         "peak_start": 11, "peak_end": 22,
         "avg_wait_peak": 35, "avg_wait_off": 10,
         "color": "#D4442A",
-        "ig": "https://www.instagram.com/explore/locations/285093/prince-street-pizza/",
+        "ig": "https://instagram.com/princestreetpizza",
     },
     {
         "id": 7, "name": "Caffè Panna", "subtitle": "Danny Meyer's Daughter Did That",
@@ -88,7 +88,7 @@ VENUES = [
         "peak_start": 14, "peak_end": 20,
         "avg_wait_peak": 35, "avg_wait_off": 10,
         "color": "#C4956A",
-        "ig": "https://www.instagram.com/explore/locations/2230809797209498/caffe-panna/",
+        "ig": "https://instagram.com/caffepanna",
     },
     {
         "id": 8, "name": "Katz's Delicatessen", "subtitle": "Since 1888. Line Since 1889.",
@@ -99,7 +99,7 @@ VENUES = [
         "peak_start": 11, "peak_end": 14,
         "avg_wait_peak": 40, "avg_wait_off": 12,
         "color": "#E8B828",
-        "ig": "https://www.instagram.com/explore/locations/25606741/katzs-delicatessen/",
+        "ig": "https://instagram.com/katzsdelicatessen",
     },
     {
         "id": 9, "name": "Levain Bakery", "subtitle": "The 6oz Cookie Empire",
@@ -110,7 +110,7 @@ VENUES = [
         "peak_start": 10, "peak_end": 15,
         "avg_wait_peak": 30, "avg_wait_off": 8,
         "color": "#D4763A",
-        "ig": "https://www.instagram.com/explore/locations/270413816/levain-bakery/",
+        "ig": "https://instagram.com/levainbakery",
     },
     {
         "id": 10, "name": "Ceres", "subtitle": "Eleven Madison Park → Mott St",
@@ -132,7 +132,7 @@ VENUES = [
         "peak_start": 17, "peak_end": 22,
         "avg_wait_peak": 40, "avg_wait_off": 10,
         "color": "#B22222",
-        "ig": "https://www.instagram.com/pst.nyc/",
+        "ig": "https://instagram.com/pst.nyc",
     },
     {
         "id": 12, "name": "Mimi's", "subtitle": "The University Place Sequel",
