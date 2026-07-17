@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-17T22:28:37.764884+00:00",
-  "updated_at_local": "06:28 PM",
+  "updated_at": "2026-07-17T23:28:12.132921+00:00",
+  "updated_at_local": "07:28 PM",
   "day_of_week": "Friday",
   "venue_count": 25,
   "venues": [
@@ -20,12 +20,12 @@
       "color": "#E8A87C",
       "ig": "https://instagram.com/mimis.ny",
       "is_open": true,
-      "busyness": 45,
-      "estimated_wait": 19,
-      "min_wait": 15,
-      "max_wait": 23,
-      "status": "NOT BAD AT ALL",
-      "status_color": "#FACC15",
+      "busyness": 20,
+      "estimated_wait": 8,
+      "min_wait": 6,
+      "max_wait": 10,
+      "status": "WALK RIGHT IN",
+      "status_color": "#4ADE80",
       "google_rating": 4.3,
       "google_rating_count": 307
     },
@@ -76,8 +76,8 @@
       "max_wait": 56,
       "status": "PREPARE TO WAIT, IT'S A HOT LINE",
       "status_color": "#F87171",
-      "google_rating": 4.3,
-      "google_rating_count": 372
+      "google_rating": 4.2,
+      "google_rating_count": 373
     },
     {
       "id": 4,
@@ -177,7 +177,7 @@
       "status": "IT'S MOVING, BUT MAY BE A MINUTE",
       "status_color": "#FB923C",
       "google_rating": 4.5,
-      "google_rating_count": 1507
+      "google_rating_count": 1508
     },
     {
       "id": 8,
@@ -277,7 +277,7 @@
       "status": "PREPARE TO WAIT, IT'S A HOT LINE",
       "status_color": "#F87171",
       "google_rating": 4.8,
-      "google_rating_count": 398
+      "google_rating_count": 401
     },
     {
       "id": 12,
@@ -295,14 +295,14 @@
       "color": "#E8A87C",
       "ig": "https://www.instagram.com/mimis.ny/",
       "is_open": true,
-      "busyness": 52,
-      "estimated_wait": 15,
-      "min_wait": 12,
-      "max_wait": 18,
-      "status": "NOT BAD AT ALL",
-      "status_color": "#FACC15",
+      "busyness": 27,
+      "estimated_wait": 6,
+      "min_wait": 5,
+      "max_wait": 7,
+      "status": "WALK RIGHT IN",
+      "status_color": "#4ADE80",
       "google_rating": 4.7,
-      "google_rating_count": 201
+      "google_rating_count": 202
     },
     {
       "id": 13,
