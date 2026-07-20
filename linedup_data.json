@@ -1,10 +1,15 @@
 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "updated_at": "2026-07-20T15:12:54.763406+00:00",
   "updated_at_local": "11:12 AM",
 =======
   "updated_at": "2026-07-20T15:45:50.478553+00:00",
   "updated_at_local": "11:45 AM",
+>>>>>>> Stashed changes
+=======
+  "updated_at": "2026-07-20T16:27:04.564793+00:00",
+  "updated_at_local": "12:27 PM",
 >>>>>>> Stashed changes
   "day_of_week": "Monday",
   "venue_count": 25,
@@ -24,13 +29,13 @@
       "avg_wait_off": 8,
       "color": "#E8A87C",
       "ig": "https://instagram.com/mimis.ny",
-      "is_open": false,
-      "busyness": 0,
-      "estimated_wait": 0,
-      "min_wait": 0,
-      "max_wait": 0,
-      "status": "CLOSED",
-      "status_color": "#6B7280",
+      "is_open": true,
+      "busyness": 69,
+      "estimated_wait": 21,
+      "min_wait": 16,
+      "max_wait": 26,
+      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
+      "status_color": "#FB923C",
       "google_rating": 4.3,
       "google_rating_count": 309
     },
@@ -51,7 +56,11 @@
       "ig": "https://instagram.com/caffeparadiso.nyc",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 71,
+=======
+      "busyness": 66,
+>>>>>>> Stashed changes
       "estimated_wait": 17,
       "min_wait": 13,
       "max_wait": 21,
@@ -85,6 +94,7 @@
       "ig": "https://instagram.com/myka_greek.usa",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 18,
       "estimated_wait": 7,
       "min_wait": 6,
@@ -98,6 +108,14 @@
       "max_wait": 18,
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
+>>>>>>> Stashed changes
+=======
+      "busyness": 58,
+      "estimated_wait": 30,
+      "min_wait": 23,
+      "max_wait": 37,
+      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
+      "status_color": "#FB923C",
 >>>>>>> Stashed changes
       "google_rating": 4.2,
       "google_rating_count": 378
@@ -117,13 +135,13 @@
       "avg_wait_off": 8,
       "color": "#F4C2C2",
       "ig": "https://instagram.com/birdiesnyc",
-      "is_open": false,
-      "busyness": 0,
-      "estimated_wait": 0,
-      "min_wait": 0,
-      "max_wait": 0,
-      "status": "CLOSED",
-      "status_color": "#6B7280",
+      "is_open": true,
+      "busyness": 30,
+      "estimated_wait": 8,
+      "min_wait": 6,
+      "max_wait": 10,
+      "status": "WALK RIGHT IN",
+      "status_color": "#4ADE80",
       "google_rating": 4.2,
       "google_rating_count": 169
     },
@@ -144,12 +162,19 @@
       "ig": "https://www.instagram.com/fontysdeli_dukaan/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 82,
       "estimated_wait": 20,
       "min_wait": 15,
       "max_wait": 25,
 =======
       "busyness": 75,
+      "estimated_wait": 14,
+      "min_wait": 11,
+      "max_wait": 17,
+>>>>>>> Stashed changes
+=======
+      "busyness": 77,
       "estimated_wait": 14,
       "min_wait": 11,
       "max_wait": 17,
@@ -176,9 +201,13 @@
       "ig": "https://instagram.com/princestreetpizza",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 79,
 =======
       "busyness": 72,
+>>>>>>> Stashed changes
+=======
+      "busyness": 74,
 >>>>>>> Stashed changes
       "estimated_wait": 24,
       "min_wait": 18,
@@ -230,9 +259,13 @@
       "ig": "https://instagram.com/katzsdelicatessen",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 73,
 =======
       "busyness": 66,
+>>>>>>> Stashed changes
+=======
+      "busyness": 68,
 >>>>>>> Stashed changes
       "estimated_wait": 28,
       "min_wait": 21,
@@ -259,6 +292,7 @@
       "ig": "https://instagram.com/levainbakery",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 70,
       "estimated_wait": 21,
       "min_wait": 16,
@@ -268,6 +302,12 @@
       "estimated_wait": 30,
       "min_wait": 23,
       "max_wait": 37,
+>>>>>>> Stashed changes
+=======
+      "busyness": 65,
+      "estimated_wait": 21,
+      "min_wait": 16,
+      "max_wait": 26,
 >>>>>>> Stashed changes
       "status": "IT'S MOVING, BUT MAY BE A MINUTE",
       "status_color": "#FB923C",
@@ -339,13 +379,13 @@
       "avg_wait_off": 6,
       "color": "#E8A87C",
       "ig": "https://www.instagram.com/mimis.ny/",
-      "is_open": false,
-      "busyness": 0,
-      "estimated_wait": 0,
-      "min_wait": 0,
-      "max_wait": 0,
-      "status": "CLOSED",
-      "status_color": "#6B7280",
+      "is_open": true,
+      "busyness": 76,
+      "estimated_wait": 17,
+      "min_wait": 13,
+      "max_wait": 21,
+      "status": "NOT BAD AT ALL",
+      "status_color": "#FACC15",
       "google_rating": 4.6,
       "google_rating_count": 203
     },
@@ -366,9 +406,13 @@
       "ig": "https://www.instagram.com/leonsbagels/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 78,
 =======
       "busyness": 71,
+>>>>>>> Stashed changes
+=======
+      "busyness": 73,
 >>>>>>> Stashed changes
       "estimated_wait": 21,
       "min_wait": 16,
@@ -393,15 +437,15 @@
       "avg_wait_off": 10,
       "color": "#3D7B48",
       "ig": "https://www.instagram.com/lindustriepizzeria/",
-      "is_open": false,
-      "busyness": 0,
-      "estimated_wait": 0,
-      "min_wait": 0,
-      "max_wait": 0,
-      "status": "CLOSED",
-      "status_color": "#6B7280",
+      "is_open": true,
+      "busyness": 70,
+      "estimated_wait": 24,
+      "min_wait": 18,
+      "max_wait": 30,
+      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
+      "status_color": "#FB923C",
       "google_rating": 4.7,
-      "google_rating_count": 3676
+      "google_rating_count": 3677
     },
     {
       "id": 15,
@@ -420,9 +464,13 @@
       "ig": "https://www.instagram.com/12.matcha/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 72,
 =======
       "busyness": 65,
+>>>>>>> Stashed changes
+=======
+      "busyness": 67,
 >>>>>>> Stashed changes
       "estimated_wait": 17,
       "min_wait": 13,
@@ -449,6 +497,7 @@
       "ig": "https://www.instagram.com/ledivenyc/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 19,
       "estimated_wait": 5,
       "min_wait": 4,
@@ -457,6 +506,9 @@
       "status_color": "#4ADE80",
 =======
       "busyness": 32,
+=======
+      "busyness": 34,
+>>>>>>> Stashed changes
       "estimated_wait": 10,
       "min_wait": 8,
       "max_wait": 12,
@@ -483,12 +535,16 @@
       "ig": "https://www.instagram.com/ledivenyc/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 16,
       "estimated_wait": 4,
       "min_wait": 3,
       "max_wait": 5,
 =======
       "busyness": 29,
+=======
+      "busyness": 31,
+>>>>>>> Stashed changes
       "estimated_wait": 8,
       "min_wait": 6,
       "max_wait": 10,
@@ -515,12 +571,19 @@
       "ig": "https://www.instagram.com/salt_hanks/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 83,
       "estimated_wait": 35,
       "min_wait": 27,
       "max_wait": 43,
 =======
       "busyness": 76,
+      "estimated_wait": 24,
+      "min_wait": 18,
+      "max_wait": 30,
+>>>>>>> Stashed changes
+=======
+      "busyness": 78,
       "estimated_wait": 24,
       "min_wait": 18,
       "max_wait": 30,
@@ -547,9 +610,13 @@
       "ig": "https://www.instagram.com/tomijazznewyork_official/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 31,
 =======
       "busyness": 23,
+>>>>>>> Stashed changes
+=======
+      "busyness": 25,
 >>>>>>> Stashed changes
       "estimated_wait": 15,
       "min_wait": 12,
@@ -576,9 +643,13 @@
       "ig": "https://www.instagram.com/breakfastbysaltscure/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 78,
 =======
       "busyness": 70,
+>>>>>>> Stashed changes
+=======
+      "busyness": 72,
 >>>>>>> Stashed changes
       "estimated_wait": 24,
       "min_wait": 18,
@@ -605,6 +676,7 @@
       "ig": "https://www.instagram.com/banhanhem/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 25,
       "estimated_wait": 15,
       "min_wait": 12,
@@ -613,11 +685,17 @@
       "status_color": "#FACC15",
 =======
       "busyness": 17,
+=======
+      "busyness": 19,
+>>>>>>> Stashed changes
       "estimated_wait": 7,
       "min_wait": 6,
       "max_wait": 8,
       "status": "WALK RIGHT IN",
       "status_color": "#4ADE80",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "google_rating": null,
       "google_rating_count": null
@@ -639,6 +717,7 @@
       "ig": "https://www.instagram.com/mamas_too/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 47,
 =======
       "busyness": 59,
@@ -648,6 +727,14 @@
       "max_wait": 23,
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
+=======
+      "busyness": 66,
+      "estimated_wait": 21,
+      "min_wait": 16,
+      "max_wait": 26,
+      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
+      "status_color": "#FB923C",
+>>>>>>> Stashed changes
       "google_rating": null,
       "google_rating_count": null
     },
@@ -668,12 +755,19 @@
       "ig": "https://www.instagram.com/lappartement4f/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 69,
       "estimated_wait": 21,
       "min_wait": 16,
       "max_wait": 26,
 =======
       "busyness": 81,
+      "estimated_wait": 30,
+      "min_wait": 23,
+      "max_wait": 37,
+>>>>>>> Stashed changes
+=======
+      "busyness": 83,
       "estimated_wait": 30,
       "min_wait": 23,
       "max_wait": 37,
@@ -700,6 +794,7 @@
       "ig": "https://www.instagram.com/emiliosballato/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 16,
       "estimated_wait": 7,
       "min_wait": 6,
@@ -708,11 +803,17 @@
       "status_color": "#4ADE80",
 =======
       "busyness": 28,
+=======
+      "busyness": 30,
+>>>>>>> Stashed changes
       "estimated_wait": 15,
       "min_wait": 12,
       "max_wait": 18,
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "google_rating": null,
       "google_rating_count": null
@@ -734,6 +835,7 @@
       "ig": "https://www.instagram.com/scarrspizza/",
       "is_open": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "busyness": 58,
 =======
       "busyness": 50,
@@ -741,6 +843,12 @@
       "estimated_wait": 16,
       "min_wait": 12,
       "max_wait": 20,
+=======
+      "busyness": 77,
+      "estimated_wait": 17,
+      "min_wait": 13,
+      "max_wait": 21,
+>>>>>>> Stashed changes
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
       "google_rating": null,
