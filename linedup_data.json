@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-25T17:33:09.942393+00:00",
-  "updated_at_local": "01:33 PM",
+  "updated_at": "2026-07-25T18:33:18.011239+00:00",
+  "updated_at_local": "02:33 PM",
   "day_of_week": "Saturday",
   "venue_count": 25,
   "venues": [
@@ -77,7 +77,7 @@
       "status": "PREPARE TO WAIT, IT'S A HOT LINE",
       "status_color": "#F87171",
       "google_rating": 4.2,
-      "google_rating_count": 390
+      "google_rating_count": 391
     },
     {
       "id": 4,
@@ -95,14 +95,14 @@
       "color": "#F4C2C2",
       "ig": "https://instagram.com/birdiesnyc",
       "is_open": true,
-      "busyness": 56,
-      "estimated_wait": 16,
-      "min_wait": 12,
-      "max_wait": 20,
-      "status": "NOT BAD AT ALL",
-      "status_color": "#FACC15",
+      "busyness": 88,
+      "estimated_wait": 25,
+      "min_wait": 19,
+      "max_wait": 31,
+      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
+      "status_color": "#FB923C",
       "google_rating": 4.2,
-      "google_rating_count": 171
+      "google_rating_count": 172
     },
     {
       "id": 5,
@@ -127,7 +127,7 @@
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
       "google_rating": 4.1,
-      "google_rating_count": 260
+      "google_rating_count": 261
     },
     {
       "id": 6,
@@ -170,10 +170,10 @@
       "color": "#C4956A",
       "ig": "https://instagram.com/caffepanna",
       "is_open": true,
-      "busyness": 67,
-      "estimated_wait": 24,
-      "min_wait": 18,
-      "max_wait": 30,
+      "busyness": 99,
+      "estimated_wait": 35,
+      "min_wait": 27,
+      "max_wait": 43,
       "status": "IT'S MOVING, BUT MAY BE A MINUTE",
       "status_color": "#FB923C",
       "google_rating": 4.5,
@@ -202,7 +202,7 @@
       "status": "PREPARE TO WAIT, IT'S A HOT LINE",
       "status_color": "#F87171",
       "google_rating": 4.5,
-      "google_rating_count": 54105
+      "google_rating_count": 54107
     },
     {
       "id": 9,
@@ -252,7 +252,7 @@
       "status": "PREPARE TO WAIT, IT'S A HOT LINE",
       "status_color": "#F87171",
       "google_rating": 4.1,
-      "google_rating_count": 1093
+      "google_rating_count": 1094
     },
     {
       "id": 11,
@@ -277,7 +277,7 @@
       "status": "NOT BAD AT ALL",
       "status_color": "#FACC15",
       "google_rating": 4.8,
-      "google_rating_count": 456
+      "google_rating_count": 457
     },
     {
       "id": 12,
@@ -320,12 +320,12 @@
       "color": "#DAA520",
       "ig": "https://www.instagram.com/leonsbagels/",
       "is_open": true,
-      "busyness": 69,
-      "estimated_wait": 21,
-      "min_wait": 16,
-      "max_wait": 26,
-      "status": "IT'S MOVING, BUT MAY BE A MINUTE",
-      "status_color": "#FB923C",
+      "busyness": 36,
+      "estimated_wait": 8,
+      "min_wait": 6,
+      "max_wait": 10,
+      "status": "WALK RIGHT IN",
+      "status_color": "#4ADE80",
       "google_rating": 4.6,
       "google_rating_count": 509
     },
@@ -495,10 +495,10 @@
       "color": "#DAA520",
       "ig": "https://www.instagram.com/breakfastbysaltscure/",
       "is_open": true,
-      "busyness": 100,
-      "estimated_wait": 35,
-      "min_wait": 27,
-      "max_wait": 43,
+      "busyness": 68,
+      "estimated_wait": 24,
+      "min_wait": 18,
+      "max_wait": 30,
       "status": "IT'S MOVING, BUT MAY BE A MINUTE",
       "status_color": "#FB923C",
       "google_rating": null,
@@ -570,12 +570,12 @@
       "color": "#C4956A",
       "ig": "https://www.instagram.com/lappartement4f/",
       "is_open": true,
-      "busyness": 59,
-      "estimated_wait": 19,
-      "min_wait": 15,
-      "max_wait": 23,
-      "status": "NOT BAD AT ALL",
-      "status_color": "#FACC15",
+      "busyness": 26,
+      "estimated_wait": 8,
+      "min_wait": 6,
+      "max_wait": 10,
+      "status": "WALK RIGHT IN",
+      "status_color": "#4ADE80",
       "google_rating": null,
       "google_rating_count": null
     },
