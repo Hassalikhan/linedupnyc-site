@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-15T21:22:27.339179+00:00",
-  "updated_at_local": "05:22 PM",
+  "updated_at": "2026-08-15T21:42:42.264792+00:00",
+  "updated_at_local": "05:42 PM",
   "day_of_week": "Saturday",
   "venue_count": 25,
   "venues": [
@@ -44,15 +44,15 @@
       "avg_wait_off": 8,
       "color": "#6B8F71",
       "ig": "https://instagram.com/caffeparadiso.nyc",
-      "is_open": true,
-      "busyness": 38,
-      "estimated_wait": 8,
-      "min_wait": 6,
-      "max_wait": 10,
-      "status": "WALK RIGHT IN",
-      "status_color": "#4ADE80",
+      "is_open": false,
+      "busyness": 0,
+      "estimated_wait": 0,
+      "min_wait": 0,
+      "max_wait": 0,
+      "status": "CLOSED",
+      "status_color": "#6B7280",
       "google_rating": 4.5,
-      "google_rating_count": 714
+      "google_rating_count": 715
     },
     {
       "id": 3,
@@ -152,7 +152,7 @@
       "status": "IT'S MOVING, BUT MAY BE A MINUTE",
       "status_color": "#FB923C",
       "google_rating": 4.4,
-      "google_rating_count": 9178
+      "google_rating_count": 9179
     },
     {
       "id": 7,
