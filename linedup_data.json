@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-16T23:28:37.001975+00:00",
-  "updated_at_local": "07:28 PM",
+  "updated_at": "2026-08-16T23:48:43.102511+00:00",
+  "updated_at_local": "07:48 PM",
   "day_of_week": "Sunday",
   "venue_count": 25,
   "venues": [
@@ -52,7 +52,7 @@
       "status": "CLOSED",
       "status_color": "#6B7280",
       "google_rating": 4.5,
-      "google_rating_count": 720
+      "google_rating_count": 721
     },
     {
       "id": 3,
@@ -352,7 +352,7 @@
       "status": "IT'S MOVING, BUT MAY BE A MINUTE",
       "status_color": "#FB923C",
       "google_rating": 4.7,
-      "google_rating_count": 3839
+      "google_rating_count": 3840
     },
     {
       "id": 15,
