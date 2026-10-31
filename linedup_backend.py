@@ -1,6 +1,6 @@
 """
 LinedUp NYC — Google Places API Backend v1.2
-Fetches live open/closed data for 15 Manhattan venues every 5 minutes.
+Fetches live open/closed data for 35 Manhattan venues every 5 minutes.
 Outputs a JSON file that the iOS app reads from a hosted URL.
 """
 
@@ -23,6 +23,7 @@ VENUES = [
         "avg_wait_peak": 30, "avg_wait_off": 8,
         "color": "#E8A87C",
         "ig": "https://instagram.com/mimis.ny",
+        "type": "food",
     },
     {
         "id": 2, "name": "Caffè Paradiso", "subtitle": "The Salted Brown Butter Cult",
@@ -34,6 +35,7 @@ VENUES = [
         "avg_wait_peak": 25, "avg_wait_off": 8,
         "color": "#6B8F71",
         "ig": "https://instagram.com/caffeparadiso.nyc",
+        "type": "food",
     },
     {
         "id": 3, "name": "MYKA Greek", "subtitle": "Madrid → Miami → The Village",
@@ -45,6 +47,7 @@ VENUES = [
         "avg_wait_peak": 45, "avg_wait_off": 15,
         "color": "#1E3A5F",
        "ig": "https://instagram.com/myka_greek.usa",
+        "type": "food",
     },
     {
         "id": 4, "name": "Birdie's", "subtitle": "Froyo Is Back",
@@ -56,6 +59,7 @@ VENUES = [
         "avg_wait_peak": 25, "avg_wait_off": 8,
         "color": "#F4C2C2",
         "ig": "https://instagram.com/birdiesnyc",
+        "type": "food",
     },
     {
         "id": 5, "name": "Fonty's Deli + Dukaan", "subtitle": "Indian Bodega Energy",
@@ -67,6 +71,7 @@ VENUES = [
         "avg_wait_peak": 20, "avg_wait_off": 5,
         "color": "#E07B39",
         "ig": "https://www.instagram.com/fontysdeli_dukaan/",
+        "type": "food",
     },
     {
         "id": 6, "name": "Prince St. Pizza", "subtitle": "The Spicy Spring OG",
@@ -78,6 +83,7 @@ VENUES = [
         "avg_wait_peak": 35, "avg_wait_off": 10,
         "color": "#D4442A",
         "ig": "https://instagram.com/princestreetpizza",
+        "type": "food",
     },
     {
         "id": 7, "name": "Caffè Panna", "subtitle": "Danny Meyer's Daughter Did That",
@@ -89,6 +95,7 @@ VENUES = [
         "avg_wait_peak": 35, "avg_wait_off": 10,
         "color": "#C4956A",
         "ig": "https://instagram.com/caffepanna",
+        "type": "food",
     },
     {
         "id": 8, "name": "Katz's Delicatessen", "subtitle": "Since 1888. Line Since 1889.",
@@ -100,6 +107,7 @@ VENUES = [
         "avg_wait_peak": 40, "avg_wait_off": 12,
         "color": "#E8B828",
         "ig": "https://instagram.com/katzsdelicatessen",
+        "type": "food",
     },
     {
         "id": 9, "name": "Levain Bakery", "subtitle": "The 6oz Cookie Empire",
@@ -111,6 +119,7 @@ VENUES = [
         "avg_wait_peak": 30, "avg_wait_off": 8,
         "color": "#D4763A",
         "ig": "https://instagram.com/levainbakery",
+        "type": "food",
     },
     {
         "id": 10, "name": "Ceres", "subtitle": "Eleven Madison Park → Mott St",
@@ -122,6 +131,7 @@ VENUES = [
         "avg_wait_peak": 50, "avg_wait_off": 15,
         "color": "#2B2B2B",
         "ig": "https://www.instagram.com/ceres.nyc/",
+        "type": "food",
     },
     {
         "id": 11, "name": "Pizza Studio Tamaki", "subtitle": "Tokyo-Neapolitan in the East Village",
@@ -133,6 +143,7 @@ VENUES = [
         "avg_wait_peak": 40, "avg_wait_off": 10,
         "color": "#B22222",
         "ig": "https://instagram.com/pst.nyc",
+        "type": "food",
     },
     {
         "id": 12, "name": "Mimi's", "subtitle": "The University Place Sequel",
@@ -144,6 +155,7 @@ VENUES = [
         "avg_wait_peak": 25, "avg_wait_off": 6,
         "color": "#E8A87C",
         "ig": "https://www.instagram.com/mimis.ny/",
+        "type": "food",
     },
     {
         "id": 13, "name": "Leon's Bagels", "subtitle": "Rainbow Bagels on Mulberry",
@@ -155,6 +167,7 @@ VENUES = [
         "avg_wait_peak": 30, "avg_wait_off": 8,
         "color": "#DAA520",
         "ig": "https://www.instagram.com/leonsbagels/",
+        "type": "food",
     },
     {
         "id": 14, "name": "L'industrie Pizzeria", "subtitle": "Burrata Slice Capital",
@@ -166,6 +179,7 @@ VENUES = [
         "avg_wait_peak": 35, "avg_wait_off": 10,
         "color": "#3D7B48",
         "ig": "https://www.instagram.com/lindustriepizzeria/",
+        "type": "food",
     },
     {
         "id": 15, "name": "12 Matcha", "subtitle": "Ceremonial Grade on Bond St",
@@ -177,6 +191,7 @@ VENUES = [
         "avg_wait_peak": 25, "avg_wait_off": 8,
         "color": "#4A7C59",
         "ig": "https://www.instagram.com/12.matcha/",
+        "type": "food",
     },
     {
         "id": 16, "name": "Le Dive", "subtitle": "Dimes Square Wine & Vibes",
@@ -188,6 +203,7 @@ VENUES = [
         "avg_wait_peak": 35, "avg_wait_off": 10,
         "color": "#8B2252",
         "ig": "https://www.instagram.com/ledivenyc/",
+        "type": "food",
     },
     {
         "id": 17, "name": "Le Dive West", "subtitle": "The Village Sequel",
@@ -199,6 +215,7 @@ VENUES = [
         "avg_wait_peak": 30, "avg_wait_off": 8,
         "color": "#722F37",
         "ig": "https://www.instagram.com/ledivenyc/",
+        "type": "food",
     },
     {
         "id": 18, "name": "Salt Hank's", "subtitle": "One Sandwich. One Legend.",
@@ -210,6 +227,7 @@ VENUES = [
         "avg_wait_peak": 35, "avg_wait_off": 10,
         "color": "#8B4513",
         "ig": "https://www.instagram.com/salt_hanks/",
+        "type": "food",
     },
     {
         "id": 19, "name": "Tomi Jazz", "subtitle": "Basement Jazz & Izakaya",
@@ -221,6 +239,7 @@ VENUES = [
         "avg_wait_peak": 45, "avg_wait_off": 15,
         "color": "#1C1C2E",
         "ig": "https://www.instagram.com/tomijazznewyork_official/",
+        "type": "food",
     },
     {
         "id": 20, "name": "Breakfast by Salt's Cure", "subtitle": "LA's Griddle Cakes Hit Morton St",
@@ -232,6 +251,7 @@ VENUES = [
         "avg_wait_peak": 35, "avg_wait_off": 10,
         "color": "#DAA520",
         "ig": "https://www.instagram.com/breakfastbysaltscure/",
+        "type": "food",
     },
     {
         "id": 21, "name": "Bánh Anh Em", "subtitle": "Michelin Bib Gourmand Vietnamese",
@@ -243,6 +263,7 @@ VENUES = [
         "avg_wait_peak": 45, "avg_wait_off": 15,
         "color": "#B22222",
         "ig": "https://www.instagram.com/banhanhem/",
+        "type": "food",
     },
     {
         "id": 22, "name": "Mama's Too", "subtitle": "Detroit-Style on Bleecker",
@@ -254,6 +275,7 @@ VENUES = [
         "avg_wait_peak": 30, "avg_wait_off": 8,
         "color": "#2E8B57",
         "ig": "https://www.instagram.com/mamas_too/",
+        "type": "food",
     },
     {
         "id": 23, "name": "L'Appartement 4F", "subtitle": "Parisian Bakery on W 10th",
@@ -265,6 +287,7 @@ VENUES = [
         "avg_wait_peak": 30, "avg_wait_off": 8,
         "color": "#C4956A",
         "ig": "https://www.instagram.com/lappartement4f/",
+        "type": "food",
     },
     {
         "id": 24, "name": "Emilio's Ballato", "subtitle": "Since 1956. No Reservations. Ever.",
@@ -276,6 +299,7 @@ VENUES = [
         "avg_wait_peak": 50, "avg_wait_off": 15,
         "color": "#8B0000",
         "ig": "https://www.instagram.com/emiliosballato/",
+        "type": "food",
     },
     {
         "id": 25, "name": "Scarr's Pizza", "subtitle": "Stone-Milled on Orchard St",
@@ -287,6 +311,7 @@ VENUES = [
         "avg_wait_peak": 25, "avg_wait_off": 8,
         "color": "#CD853F",
         "ig": "https://www.instagram.com/scarrspizza/",
+        "type": "food",
     },
     {
         "id": 26, "name": "Stüssy NYC", "subtitle": "50 Prince St Chapter Store",
@@ -298,6 +323,7 @@ VENUES = [
         "avg_wait_peak": 40, "avg_wait_off": 15,
         "color": "#1A1A1A",
         "ig": "https://instagram.com/stussy",
+        "type": "shop",
     },
     {
         "id": 27, "name": "New York or Nowhere", "subtitle": "NYON on Lafayette",
@@ -309,6 +335,7 @@ VENUES = [
         "avg_wait_peak": 35, "avg_wait_off": 10,
         "color": "#FF6B35",
         "ig": "https://instagram.com/newyorkornowhere",
+        "type": "shop",
     },
     {
         "id": 28, "name": "Sézane", "subtitle": "L'Appartement Nolita",
@@ -320,6 +347,7 @@ VENUES = [
         "avg_wait_peak": 25, "avg_wait_off": 5,
         "color": "#C8A882",
         "ig": "https://instagram.com/sezane",
+        "type": "shop",
     },
     {
         "id": 29, "name": "Kith Manhattan", "subtitle": "337 Lafayette Flagship",
@@ -331,6 +359,7 @@ VENUES = [
         "avg_wait_peak": 25, "avg_wait_off": 5,
         "color": "#2C2C2C",
         "ig": "https://instagram.com/kith",
+        "type": "shop",
     },
     {
         "id": 30, "name": "Supreme", "subtitle": "190 Bowery. The Building.",
@@ -342,6 +371,7 @@ VENUES = [
         "avg_wait_peak": 35, "avg_wait_off": 10,
         "color": "#E31E24",
         "ig": "https://instagram.com/supremenewyork",
+        "type": "shop",
     },
     {
         "id": 31, "name": "Aimé Leon Dore", "subtitle": "Café, Clubhouse, Closet",
@@ -353,6 +383,7 @@ VENUES = [
         "avg_wait_peak": 40, "avg_wait_off": 10,
         "color": "#5B7553",
         "ig": "https://instagram.com/aimeleondore",
+        "type": "shop",
     },
     {
         "id": 32, "name": "Dover Street Market", "subtitle": "Beautiful Chaos on Lexington",
@@ -364,6 +395,7 @@ VENUES = [
         "avg_wait_peak": 20, "avg_wait_off": 5,
         "color": "#000000",
         "ig": "https://instagram.com/dikifreak_doverstreetmarketnew",
+        "type": "shop",
     },
     {
         "id": 33, "name": "Brandy Melville", "subtitle": "SoHo Flagship on Broadway",
@@ -375,6 +407,7 @@ VENUES = [
         "avg_wait_peak": 25, "avg_wait_off": 8,
         "color": "#F5C6C6",
         "ig": "https://instagram.com/brandymelvilleusa",
+        "type": "shop",
     },
     {
         "id": 34, "name": "Scent Bar NYC", "subtitle": "Perfume Alley on Elizabeth",
@@ -386,6 +419,7 @@ VENUES = [
         "avg_wait_peak": 25, "avg_wait_off": 5,
         "color": "#8B6F47",
         "ig": "https://instagram.com/luckyscent",
+        "type": "shop",
     },
     {
         "id": 35, "name": "21 Spring Pop-Ups", "subtitle": "Parasol Projects Nolita",
@@ -397,6 +431,7 @@ VENUES = [
         "avg_wait_peak": 30, "avg_wait_off": 8,
         "color": "#FF4500",
         "ig": "https://instagram.com/parasolprojects",
+        "type": "shop",
     },
 ]
 
@@ -524,6 +559,7 @@ def main():
             "avg_wait_off": venue["avg_wait_off"],
             "color": venue["color"],
             "ig": venue["ig"],
+            "type": venue["type"],
             "is_open": is_open,
             "busyness": busyness,
             "estimated_wait": estimated_wait,
