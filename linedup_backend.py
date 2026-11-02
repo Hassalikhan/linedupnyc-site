@@ -1,7 +1,8 @@
 """
-LinedUp NYC — Google Places API Backend v1.2
+LinedUp NYC — Google Places API Backend v1.3
 Fetches live open/closed data for 35 Manhattan venues every 5 minutes.
 Outputs a JSON file that the iOS app reads from a hosted URL.
+Uses America/New_York timezone for all hour-based calculations.
 """
 
 import requests
@@ -9,6 +10,9 @@ import json
 import time
 import os
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+
+NYC_TZ = ZoneInfo("America/New_York")
 
 API_KEY = os.environ.get("GOOGLE_PLACES_API_KEY", "")
 
@@ -24,6 +28,7 @@ VENUES = [
         "color": "#E8A87C",
         "ig": "https://instagram.com/mimis.ny",
         "type": "food",
+        "opens": 10, "closes": 22, "closed_days": [],
     },
     {
         "id": 2, "name": "Caffè Paradiso", "subtitle": "The Salted Brown Butter Cult",
@@ -36,6 +41,7 @@ VENUES = [
         "color": "#6B8F71",
         "ig": "https://instagram.com/caffeparadiso.nyc",
         "type": "food",
+        "opens": 8, "closes": 18, "closed_days": [],
     },
     {
         "id": 3, "name": "MYKA Greek", "subtitle": "Madrid → Miami → The Village",
@@ -48,6 +54,7 @@ VENUES = [
         "color": "#1E3A5F",
        "ig": "https://instagram.com/myka_greek.usa",
         "type": "food",
+        "opens": 12, "closes": 22, "closed_days": [],
     },
     {
         "id": 4, "name": "Birdie's", "subtitle": "Froyo Is Back",
@@ -60,6 +67,7 @@ VENUES = [
         "color": "#F4C2C2",
         "ig": "https://instagram.com/birdiesnyc",
         "type": "food",
+        "opens": 12, "closes": 22, "closed_days": [],
     },
     {
         "id": 5, "name": "Fonty's Deli + Dukaan", "subtitle": "Indian Bodega Energy",
@@ -72,6 +80,7 @@ VENUES = [
         "color": "#E07B39",
         "ig": "https://www.instagram.com/fontysdeli_dukaan/",
         "type": "food",
+        "opens": 11, "closes": 16, "closed_days": [0],
     },
     {
         "id": 6, "name": "Prince St. Pizza", "subtitle": "The Spicy Spring OG",
@@ -84,6 +93,7 @@ VENUES = [
         "color": "#D4442A",
         "ig": "https://instagram.com/princestreetpizza",
         "type": "food",
+        "opens": 10, "closes": 23, "closed_days": [],
     },
     {
         "id": 7, "name": "Caffè Panna", "subtitle": "Danny Meyer's Daughter Did That",
@@ -96,6 +106,7 @@ VENUES = [
         "color": "#C4956A",
         "ig": "https://instagram.com/caffepanna",
         "type": "food",
+        "opens": 13, "closes": 22, "closed_days": [0, 1],
     },
     {
         "id": 8, "name": "Katz's Delicatessen", "subtitle": "Since 1888. Line Since 1889.",
@@ -108,6 +119,7 @@ VENUES = [
         "color": "#E8B828",
         "ig": "https://instagram.com/katzsdelicatessen",
         "type": "food",
+        "opens": 8, "closes": 22, "closed_days": [],
     },
     {
         "id": 9, "name": "Levain Bakery", "subtitle": "The 6oz Cookie Empire",
@@ -120,6 +132,7 @@ VENUES = [
         "color": "#D4763A",
         "ig": "https://instagram.com/levainbakery",
         "type": "food",
+        "opens": 8, "closes": 20, "closed_days": [],
     },
     {
         "id": 10, "name": "Ceres", "subtitle": "Eleven Madison Park → Mott St",
@@ -132,6 +145,7 @@ VENUES = [
         "color": "#2B2B2B",
         "ig": "https://www.instagram.com/ceres.nyc/",
         "type": "food",
+        "opens": 11, "closes": 21, "closed_days": [0, 1],
     },
     {
         "id": 11, "name": "Pizza Studio Tamaki", "subtitle": "Tokyo-Neapolitan in the East Village",
@@ -144,6 +158,7 @@ VENUES = [
         "color": "#B22222",
         "ig": "https://instagram.com/pst.nyc",
         "type": "food",
+        "opens": 17, "closes": 22, "closed_days": [0, 1],
     },
     {
         "id": 12, "name": "Mimi's", "subtitle": "The University Place Sequel",
@@ -156,6 +171,7 @@ VENUES = [
         "color": "#E8A87C",
         "ig": "https://www.instagram.com/mimis.ny/",
         "type": "food",
+        "opens": 10, "closes": 22, "closed_days": [],
     },
     {
         "id": 13, "name": "Leon's Bagels", "subtitle": "Rainbow Bagels on Mulberry",
@@ -168,6 +184,7 @@ VENUES = [
         "color": "#DAA520",
         "ig": "https://www.instagram.com/leonsbagels/",
         "type": "food",
+        "opens": 7, "closes": 15, "closed_days": [],
     },
     {
         "id": 14, "name": "L'industrie Pizzeria", "subtitle": "Burrata Slice Capital",
@@ -180,6 +197,7 @@ VENUES = [
         "color": "#3D7B48",
         "ig": "https://www.instagram.com/lindustriepizzeria/",
         "type": "food",
+        "opens": 11, "closes": 22, "closed_days": [],
     },
     {
         "id": 15, "name": "12 Matcha", "subtitle": "Ceremonial Grade on Bond St",
@@ -192,6 +210,7 @@ VENUES = [
         "color": "#4A7C59",
         "ig": "https://www.instagram.com/12.matcha/",
         "type": "food",
+        "opens": 9, "closes": 18, "closed_days": [],
     },
     {
         "id": 16, "name": "Le Dive", "subtitle": "Dimes Square Wine & Vibes",
@@ -204,6 +223,7 @@ VENUES = [
         "color": "#8B2252",
         "ig": "https://www.instagram.com/ledivenyc/",
         "type": "food",
+        "opens": 16, "closes": 0, "closed_days": [],
     },
     {
         "id": 17, "name": "Le Dive West", "subtitle": "The Village Sequel",
@@ -216,6 +236,7 @@ VENUES = [
         "color": "#722F37",
         "ig": "https://www.instagram.com/ledivenyc/",
         "type": "food",
+        "opens": 16, "closes": 0, "closed_days": [],
     },
     {
         "id": 18, "name": "Salt Hank's", "subtitle": "One Sandwich. One Legend.",
@@ -228,6 +249,7 @@ VENUES = [
         "color": "#8B4513",
         "ig": "https://www.instagram.com/salt_hanks/",
         "type": "food",
+        "opens": 11, "closes": 16, "closed_days": [0],
     },
     {
         "id": 19, "name": "Tomi Jazz", "subtitle": "Basement Jazz & Izakaya",
@@ -240,6 +262,7 @@ VENUES = [
         "color": "#1C1C2E",
         "ig": "https://www.instagram.com/tomijazznewyork_official/",
         "type": "food",
+        "opens": 18, "closes": 1, "closed_days": [0],
     },
     {
         "id": 20, "name": "Breakfast by Salt's Cure", "subtitle": "LA's Griddle Cakes Hit Morton St",
@@ -252,6 +275,7 @@ VENUES = [
         "color": "#DAA520",
         "ig": "https://www.instagram.com/breakfastbysaltscure/",
         "type": "food",
+        "opens": 9, "closes": 15, "closed_days": [0],
     },
     {
         "id": 21, "name": "Bánh Anh Em", "subtitle": "Michelin Bib Gourmand Vietnamese",
@@ -264,6 +288,7 @@ VENUES = [
         "color": "#B22222",
         "ig": "https://www.instagram.com/banhanhem/",
         "type": "food",
+        "opens": 17, "closes": 22, "closed_days": [0],
     },
     {
         "id": 22, "name": "Mama's Too", "subtitle": "Detroit-Style on Bleecker",
@@ -276,6 +301,7 @@ VENUES = [
         "color": "#2E8B57",
         "ig": "https://www.instagram.com/mamas_too/",
         "type": "food",
+        "opens": 11, "closes": 22, "closed_days": [],
     },
     {
         "id": 23, "name": "L'Appartement 4F", "subtitle": "Parisian Bakery on W 10th",
@@ -288,6 +314,7 @@ VENUES = [
         "color": "#C4956A",
         "ig": "https://www.instagram.com/lappartement4f/",
         "type": "food",
+        "opens": 8, "closes": 15, "closed_days": [0, 1],
     },
     {
         "id": 24, "name": "Emilio's Ballato", "subtitle": "Since 1956. No Reservations. Ever.",
@@ -300,6 +327,7 @@ VENUES = [
         "color": "#8B0000",
         "ig": "https://www.instagram.com/emiliosballato/",
         "type": "food",
+        "opens": 17, "closes": 23, "closed_days": [],
     },
     {
         "id": 25, "name": "Scarr's Pizza", "subtitle": "Stone-Milled on Orchard St",
@@ -312,6 +340,7 @@ VENUES = [
         "color": "#CD853F",
         "ig": "https://www.instagram.com/scarrspizza/",
         "type": "food",
+        "opens": 11, "closes": 23, "closed_days": [],
     },
     {
         "id": 26, "name": "Stüssy NYC", "subtitle": "50 Prince St Chapter Store",
@@ -324,6 +353,7 @@ VENUES = [
         "color": "#1A1A1A",
         "ig": "https://instagram.com/stussy",
         "type": "shop",
+        "opens": 11, "closes": 19, "closed_days": [],
     },
     {
         "id": 27, "name": "New York or Nowhere", "subtitle": "NYON on Lafayette",
@@ -336,6 +366,7 @@ VENUES = [
         "color": "#FF6B35",
         "ig": "https://instagram.com/newyorkornowhere",
         "type": "shop",
+        "opens": 11, "closes": 19, "closed_days": [],
     },
     {
         "id": 28, "name": "Sézane", "subtitle": "L'Appartement Nolita",
@@ -348,6 +379,7 @@ VENUES = [
         "color": "#C8A882",
         "ig": "https://instagram.com/sezane",
         "type": "shop",
+        "opens": 11, "closes": 19, "closed_days": [],
     },
     {
         "id": 29, "name": "Kith Manhattan", "subtitle": "337 Lafayette Flagship",
@@ -360,6 +392,7 @@ VENUES = [
         "color": "#2C2C2C",
         "ig": "https://instagram.com/kith",
         "type": "shop",
+        "opens": 11, "closes": 19, "closed_days": [],
     },
     {
         "id": 30, "name": "Supreme", "subtitle": "190 Bowery. The Building.",
@@ -372,6 +405,7 @@ VENUES = [
         "color": "#E31E24",
         "ig": "https://instagram.com/supremenewyork",
         "type": "shop",
+        "opens": 11, "closes": 18, "closed_days": [],
     },
     {
         "id": 31, "name": "Aimé Leon Dore", "subtitle": "Café, Clubhouse, Closet",
@@ -384,6 +418,7 @@ VENUES = [
         "color": "#5B7553",
         "ig": "https://instagram.com/aimeleondore",
         "type": "shop",
+        "opens": 11, "closes": 19, "closed_days": [],
     },
     {
         "id": 32, "name": "Dover Street Market", "subtitle": "Beautiful Chaos on Lexington",
@@ -396,6 +431,7 @@ VENUES = [
         "color": "#000000",
         "ig": "https://instagram.com/dikifreak_doverstreetmarketnew",
         "type": "shop",
+        "opens": 11, "closes": 19, "closed_days": [],
     },
     {
         "id": 33, "name": "Brandy Melville", "subtitle": "SoHo Flagship on Broadway",
@@ -408,6 +444,7 @@ VENUES = [
         "color": "#F5C6C6",
         "ig": "https://instagram.com/brandymelvilleusa",
         "type": "shop",
+        "opens": 10, "closes": 20, "closed_days": [],
     },
     {
         "id": 34, "name": "Scent Bar NYC", "subtitle": "Perfume Alley on Elizabeth",
@@ -420,6 +457,7 @@ VENUES = [
         "color": "#8B6F47",
         "ig": "https://instagram.com/luckyscent",
         "type": "shop",
+        "opens": 11, "closes": 19, "closed_days": [],
     },
     {
         "id": 35, "name": "21 Spring Pop-Ups", "subtitle": "Parasol Projects Nolita",
@@ -432,6 +470,7 @@ VENUES = [
         "color": "#FF4500",
         "ig": "https://instagram.com/parasolprojects",
         "type": "shop",
+        "opens": 11, "closes": 18, "closed_days": [],
     },
 ]
 
@@ -470,7 +509,7 @@ def estimate_busyness(venue, hour, day_of_week):
     if is_weekend:
         busyness = min(100, int(busyness * 1.3))
 
-    minute = datetime.now().minute
+    minute = datetime.now(NYC_TZ).minute
     jitter = ((venue["id"] * 17 + minute) % 20) - 10
     busyness = max(5, min(100, busyness + jitter))
     return busyness
@@ -507,9 +546,26 @@ def get_status(estimated_wait):
         return "PREPARE TO WAIT, IT'S A HOT LINE", "#F87171"
 
 
+def is_open_fallback(venue, hour, day_of_week):
+    """Use venue's known operating hours when Google doesn't return openNow."""
+    # Check closed days first (Monday=0 ... Sunday=6)
+    if day_of_week in venue.get("closed_days", []):
+        return False
+
+    opens = venue.get("opens", 0)
+    closes = venue.get("closes", 24)
+
+    # Handle overnight hours (e.g. bar opens 16, closes 0 = midnight)
+    if closes <= opens:
+        # Open from opens until midnight, or midnight until closes
+        return hour >= opens or hour < closes
+    else:
+        return opens <= hour < closes
+
+
 def main():
     now = datetime.now(timezone.utc)
-    local_now = datetime.now()
+    local_now = datetime.now(NYC_TZ)
     hour = local_now.hour
     day_of_week = local_now.weekday()
 
@@ -519,9 +575,13 @@ def main():
         print(f"Fetching data for {venue['name']}...")
         place_data = fetch_place_details(venue["place_id"])
 
-        is_open = True
+        # Use Google's openNow if available, otherwise fall back to known hours
         if place_data and "currentOpeningHours" in place_data:
             is_open = place_data.get("currentOpeningHours", {}).get("openNow", True)
+        else:
+            is_open = is_open_fallback(venue, hour, day_of_week)
+            if not is_open:
+                print(f"  → No Google hours for {venue['name']}, fallback says CLOSED")
 
         busyness = estimate_busyness(venue, hour, day_of_week)
 
